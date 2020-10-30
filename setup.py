@@ -1,15 +1,20 @@
 #!/usr/bin/python3
 import setuptools
 
-with open('README.md') as f:
-    long_description = f.read()
+def reader(filename:str, lister:bool):
+    text = ''
+    with open(filename) as f:
+        text = f.read()
+        if lister:
+            text = text.splitlines()
+        return text
 
 setuptools.setup(name="pybuster-PercyJackson235",
                  version="0.3",
                  author="Zachary Farquharson",
                  author_email="PercyJackson235@gmail.com",
                  description="Python Web Directory and File Brute Forcer",
-                 long_description=long_description,
+                 long_description=reader('README.md', False),
                  long_description_content_type="text/markdown",
                  url="https://github.com/PercyJackson235/pybuster",
                  packages=setuptools.find_packages(),
@@ -21,4 +26,5 @@ setuptools.setup(name="pybuster-PercyJackson235",
                               "Operating System :: OS Independent",
                               "Programming Language :: Python :: 3"],
                  python_requires=">=3",
+                 install_requires=reader('requirements.txt', True),
                  scripts=['pybuster/pybuster'])
