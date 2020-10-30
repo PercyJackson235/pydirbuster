@@ -21,4 +21,4 @@ setuptools.setup(name="pybuster-PercyJackson235",
                               "Operating System :: OS Independent",
                               "Programming Language :: Python :: 3"],
                  python_requires=">=3",
-                 scripts=['pybuster'])
+                 scripts=['pybuster/pybuster'])

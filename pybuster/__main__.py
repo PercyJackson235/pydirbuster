@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from pybuster.main import Pybuster
 import argparse
 from pybuster import utils
