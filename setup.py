@@ -6,7 +6,7 @@ def reader(filename:str, lister:bool):
     with open(filename) as f:
         text = f.read()
         if lister:
-            text = text.splitlines()
+            text = [ i.split('=')[0] for i in text.splitlines()]
         return text
 
 setuptools.setup(name="pybuster-PercyJackson235",
