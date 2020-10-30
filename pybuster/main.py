@@ -166,7 +166,8 @@ class Pybuster(object):
         header_text += "Threads:".ljust(20) + str(self.threads) + '\n'
         header_text += "Wordlist:".ljust(20) + self.wordfile + '\n'
         header_text += "Status Codes:".ljust(20) + ','.join(map(str,self.codes)) + '\n'
-        header_text += "User Agent:".ljust(20) + self.user_agent
+        header_text += "User Agent:".ljust(20) + self.user_agent + '\n'
+        header_text += "Extensions:".ljust(20) + ','.join((i.lstrip('.') for i in self.exts if i != ''))
         self._print_func(header_text)
     
     @utils.pretty
