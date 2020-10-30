@@ -37,5 +37,5 @@ All paramters are documented under the Pybuster class.
 """
 
 from . import utils
-__version__ = "Pybuster v0.03"
+__version__ = "Pybuster v0.04"
 from pybuster.main import Pybuster

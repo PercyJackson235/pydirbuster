@@ -10,7 +10,7 @@ def reader(filename:str, lister:bool):
         return text
 
 setuptools.setup(name="pybuster-PercyJackson235",
-                 version="0.3",
+                 version="0.4",
                  author="Zachary Farquharson",
                  author_email="PercyJackson235@gmail.com",
                  description="Python Web Directory and File Brute Forcer",
