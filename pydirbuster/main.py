@@ -16,18 +16,26 @@ from tqdm import tqdm
 
 class Pybuster(object):
     """The Pybuster class is the main interface for this website scanner.
+
        Pybuster Class:
+
        param: url - The website base url for scanning.
        type: str
+
        param: wordfile - The filepath, relative or absolute for wordlist.
        type: str
+
        param: threads - The number of threads for the scanner to run. Default = 15
        type: int
+
        param: exts - The list of file extensions to check. default = ['']
        It is best pass it a list, but it can be passed a comma delimited
        string ex., 'php,html,png'
+       type: list
+
        param: logfile - The name of an output file write results to.
        type: str
+
        param: codes - The http status codes to accept in responses.
        Can be passed a list of numbers in either int or str forms, or a 
        comma delimited string. So ['200','204','301','302','307','401','403'],
@@ -35,13 +43,16 @@ class Pybuster(object):
        valid, but the inner values must be able to converted to integers.
        Default = [200,204,301,302,307,401,403]
        param: user - HTTP username - Default = None
-       type: str
+       type: list
+
        param: password - HTTP password - Default = None
        type: str
+
        param: force - Switch for forcing processing on a wildcard matching webserver.
        To switch on this option use the boolean value True, but any valid truthy value
        would work. Default = False
        type: bool
+       
        param: user_agent - The user agent to use in http requests. If None is
        passed as the user_agent, a randomizer will be called to supply one.
        Default is the current python requests user agent.
