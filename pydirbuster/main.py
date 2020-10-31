@@ -9,7 +9,7 @@ import concurrent.futures
 import argparse
 from string import ascii_letters
 import sys, time
-from pybuster import utils, __version__
+from pydirbuster import utils, __version__
 from pathlib import Path
 from collections import defaultdict
 from tqdm import tqdm

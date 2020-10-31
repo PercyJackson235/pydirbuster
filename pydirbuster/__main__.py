@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from pybuster.main import Pybuster
+from pydirbuster.main import Pybuster
 import argparse
-from pybuster import utils
+from pydirbuster import utils
 
 parser = argparse.ArgumentParser(description="Python Web Directory and File Brute Forcer")
 parser.add_argument('-u', "--url",required=True, help="The url to start brute foroce from.")

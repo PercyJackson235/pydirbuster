@@ -1,15 +1,15 @@
 """
-pybuster Module - Python Web Directory and File Brute Forcer
+pydirbuster Module - Python Web Directory and File Brute Forcer
 ###############
 
-pybuster is module for website file enumeration written in python3.
+pydirbuster is module for website file enumeration written in python3.
 Basic Usage:
-    >>> import pybuster
-    >>> webbuster = pybuster.Pybuster(url="http://doctor/", wordfile="/root/HackTheBox/tools/short.txt",
+    >>> import pydirbuster
+    >>> webbuster = pydirbuster.Pybuster(url="http://doctor/", wordfile="/root/HackTheBox/tools/short.txt",
     ... exts=['php','html'])
     >>> webbuster.Run()
     =================================================================
-    Pybuster v0.02
+    Pydirbuster v0.02
     =================================================================
     Url:                http://doctor/
     Threads:            15
@@ -37,5 +37,5 @@ All paramters are documented under the Pybuster class.
 """
 
 from . import utils
-__version__ = "Pybuster v0.04"
-from pybuster.main import Pybuster
+__version__ = "Pydirbuster v0.04"
+from pydirbuster.main import Pybuster
