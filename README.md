@@ -3,7 +3,8 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Percyjackson235/pydirbuster.git)
 
 Pydirbuster is a Python based Web Directory and File Brute Forcer.
-# Installtion
+# Installation
+Pip:
 ```
 $ pip3 install pydirbuster
 ```
