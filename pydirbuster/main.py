@@ -29,8 +29,8 @@ class Pybuster(object):
        type: int
 
        param: exts - The list of file extensions to check. default = ['']
-       It is best pass it a list, but it can be passed a comma delimited
-       string ex., 'php,html,png'
+       It is best pass it a list, ie. ['php', 'html', 'png'], but it can be
+       passed a comma delimited string ex., 'php,html,png'
        type: list
 
        param: logfile - The name of an output file write results to.
@@ -52,7 +52,7 @@ class Pybuster(object):
        To switch on this option use the boolean value True, but any valid truthy value
        would work. Default = False
        type: bool
-       
+
        param: user_agent - The user agent to use in http requests. If None is
        passed as the user_agent, a randomizer will be called to supply one.
        Default is the current python requests user agent.
