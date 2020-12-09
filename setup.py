@@ -26,5 +26,5 @@ setuptools.setup(name="pydirbuster",
                               "Operating System :: OS Independent",
                               "Programming Language :: Python :: 3"],
                  python_requires=">=3",
-                 install_requires=reader('requirements.txt', True),
+                 install_requires=reader('requirements.txt', True)),
                  scripts=['pydirbuster/pydirbuster'])
