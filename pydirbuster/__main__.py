@@ -2,8 +2,10 @@
 from pydirbuster.main import Pybuster
 import argparse
 from pydirbuster import utils
+from pydirbuster import __version__
 
-parser = argparse.ArgumentParser(description="Python Web Directory and File Brute Forcer")
+prog = __version__.split()[0].lower()
+parser = argparse.ArgumentParser(prog=prog, description="Python Web Directory and File Brute Forcer")
 parser.add_argument('-u', "--url",required=True, help="The url to start brute foroce from.")
 parser.add_argument('-w', "--wordlist", dest="wordfile", required=True, help="The wordlist to use for brute force.")
 parser.add_argument('--user', help="HTTP Username")
